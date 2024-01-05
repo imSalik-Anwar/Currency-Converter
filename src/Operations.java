@@ -157,20 +157,20 @@ public class Operations {
     }
 
     public static String prepareURL(String[] args){
-        String baseURL = "http://apilayer.net/api/live";
-        String accessKey = "4941b552a490fe4ab105f8359f8fd874";
+        final String baseURL = "http://apilayer.net/api/live";
+        final String accessKey = "4941b552a490fe4ab105f8359f8fd874";
         String target = args[2];
         String source = args[1];
-        String url = baseURL + "?access_key="+accessKey + "&currencies="+target + "&source="+source + "&format=1";
+        final String url = baseURL + "?access_key="+accessKey + "&currencies="+target + "&source="+source + "&format=1";
 
         return url;
     }
 
     public static String prepareURLKeepingSourceUSD(String[] args){
-        String baseURL = "http://apilayer.net/api/live";
-        String accessKey = "4941b552a490fe4ab105f8359f8fd874";
+        final String baseURL = "http://apilayer.net/api/live";
+        final String accessKey = "4941b552a490fe4ab105f8359f8fd874";
         String target = args[2];
-        String url = baseURL + "?access_key="+accessKey + "&currencies="+target + "&source=USD" + "&format=1";
+        final String url = baseURL + "?access_key="+accessKey + "&currencies="+target + "&source=USD" + "&format=1";
 
         return url;
     }
