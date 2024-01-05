@@ -8,6 +8,9 @@ import java.util.HashMap;
 import javax.management.RuntimeErrorException;
 
 public class Operations {
+    final static String baseURL = "http://apilayer.net/api/live";
+    final static String accessKey = "4941b552a490fe4ab105f8359f8fd874";
+
     public static void convert(String[] args) {
         // validate arguments
         if(!ValidateArguments.isConvertArgumentValid(args)){
@@ -157,8 +160,8 @@ public class Operations {
     }
 
     public static String prepareURL(String[] args){
-        final String baseURL = "http://apilayer.net/api/live";
-        final String accessKey = "4941b552a490fe4ab105f8359f8fd874";
+        // final String baseURL = "http://apilayer.net/api/live";
+        // final String accessKey = "4941b552a490fe4ab105f8359f8fd874";
         String target = args[2];
         String source = args[1];
         final String url = baseURL + "?access_key="+accessKey + "&currencies="+target + "&source="+source + "&format=1";
@@ -167,8 +170,8 @@ public class Operations {
     }
 
     public static String prepareURLKeepingSourceUSD(String[] args){
-        final String baseURL = "http://apilayer.net/api/live";
-        final String accessKey = "4941b552a490fe4ab105f8359f8fd874";
+        // final String baseURL = "http://apilayer.net/api/live";
+        // final String accessKey = "4941b552a490fe4ab105f8359f8fd874";
         String target = args[2];
         final String url = baseURL + "?access_key="+accessKey + "&currencies="+target + "&source=USD" + "&format=1";
 
