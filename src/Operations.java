@@ -5,8 +5,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
 
-import javax.management.RuntimeErrorException;
-
 public class Operations {
     final static String baseURL = "http://apilayer.net/api/live";
     final static String accessKey = "4941b552a490fe4ab105f8359f8fd874";
